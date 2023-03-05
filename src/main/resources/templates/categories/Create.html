@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="Master :: header">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Categories</h1>
+<form method="post">
+    <div class="container">
+
+        <div class="mb-3">
+            <label for="category" class="form-label">Category Name</label>
+            <input type="text" class="form-control" id="category" name="category">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>
+<div th:replace="Master :: footer"></div>
+</body>
+</html>
